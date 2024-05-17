@@ -4,20 +4,23 @@
  */
 package gestorbibliotecacomun;
 
+import java.io.Serializable;
+
 /**
  *
  * @author alepd
  */
-public class TLibro {
-   private String Isbn;
-   private String Titulo;
-   private String Autor;
-   private int Anio;
-   private String Pais;
-   private String Idioma;
-   private int NoLibros;
-   private int NoPrestados;
-   private int NoListaEspera;
+public class TLibro implements Serializable {
+    private static final long serialVersionUID = 1L;
+    private String Isbn;
+    private String Titulo;
+    private String Autor;
+    private int Anio;
+    private String Pais;
+    private String Idioma;
+    private int NoLibros;
+    private int NoPrestados;
+    private int NoListaEspera;
 
     public TLibro() {
     }
@@ -34,7 +37,6 @@ public class TLibro {
         this.NoListaEspera = NoListaEspera;
     }
 
-   
     public String getIsbn() {
         return Isbn;
     }
@@ -106,5 +108,5 @@ public class TLibro {
     public void setNoListaEspera(int NoListaEspera) {
         this.NoListaEspera = NoListaEspera;
     }
-   
+
 }

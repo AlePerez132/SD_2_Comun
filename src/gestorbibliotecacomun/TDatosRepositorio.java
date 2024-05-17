@@ -4,13 +4,15 @@
  */
 package gestorbibliotecacomun;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author alepd
  */
-public class TDatosRepositorio {
+public class TDatosRepositorio implements Serializable{
+    private static final long serialVersionUID = 1L;
     private String nombre;
     private String direccion;
     private int numLibros;
